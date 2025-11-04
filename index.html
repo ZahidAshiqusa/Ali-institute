@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ali Institute — Registration Form</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <img src="img/1.png" alt="Logo" class="logo"/>
+      <div class="title">
+        <h1>Ali Institute of Medical Sciences</h1>
+        <p>Hasilpur</p>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>Registration Form</h2>
+      <form id="admissionForm" class="form">
+        <div class="grid">
+          <label>Name
+            <input name="name" required />
+          </label>
+
+          <label>Father Name
+            <input name="father" required />
+          </label>
+
+          <label>Class
+            <select name="class">
+              <option value="">Select</option>
+              <option>10th</option>
+              <option>11th</option>
+              <option>12th</option>
+            </select>
+          </label>
+
+          <label>Gender
+            <select name="gender">
+              <option value="">Select</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Other</option>
+            </select>
+          </label>
+
+          <label>Address
+            <input name="address" />
+          </label>
+
+          <label>Phone Number
+            <input name="phone" placeholder="03xxxxxxxxx" pattern="[0-9+-\\s]{5,20}" />
+          </label>
+
+          <label>Interest
+            <select name="interest">
+              <option value="">Select</option>
+              <option>Yes</option>
+              <option>No</option>
+              <option>Average</option>
+            </select>
+          </label>
+
+          <label>Admin Password
+            <input name="adminPassword" type="password" required />
+          </label>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit</button>
+        <p id="status" class="status"></p>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp"/>
+      <p>An Application By:<strong>ZAID ASHIQ-03299931199</strong></p>
+    </footer>
+  </main>
+
+  <script src="/script.js"></script>
+</body>
+          </html>
